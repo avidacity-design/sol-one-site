@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>Login Result</title></head>
+<body style="font-family:Arial;text-align:center;margin-top:80px;">
+<h1>Authorization Complete</h1>
+<div id="result"></div>
+<script>
+const p=new URLSearchParams(location.search);
+document.getElementById("result").innerHTML="<p>Code:</p><pre>"+(p.get("code")||"No code received")+"</pre>";
+</script>
+</body>
+</html>
